@@ -13,7 +13,7 @@ function Header() {
 
             <div className="search-wrapper">
                 <span className="fas fa-search"></span>
-                <input type="search" placeholder="Search here" />
+                <input type="search" placeholder="Find People and Clubs" />
             </div>
 
             <div className="user-wrapper d-flex align-items-center">
