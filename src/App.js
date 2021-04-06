@@ -1,8 +1,14 @@
+import './styles/main.css';
+import Sidebar from './components/Sidebar';
+import Main from './components/Main';
+
 function App() {
   return (
-    <div>
-      Here
-    </div>
+    <>
+      <Sidebar />
+
+      <Main />
+    </>
   );
 }
 

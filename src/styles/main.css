@@ -1,0 +1,353 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --main-color: #f2efe4;
+    --color-dark: #1d2231;
+    --text-color: #4f4f4f;
+    --text-color-white: #ffffff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0px !important;
+}
+
+
+
+
+
+/* Sidebar Styles */
+
+.sidebar {
+    width: 245px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--main-color);
+    z-index: 100;
+    transition: width 300ms;
+}
+
+.sidebar-brand {
+    height: 90px;
+    padding: 1rem 0rem 1rem 2rem;
+    color: var(--text-color);
+}
+
+.sidebar-brand span {
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+.sidebar-menu {
+    margin-top: 1rem;
+}
+
+.sidebar-menu li {
+    width: 100%;
+    margin-bottom: 1.7rem;
+    padding-left: 1rem;
+}
+
+.sidebar-menu a {
+    padding-left: 1rem;
+    display: block;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.sidebar-menu a.active {
+    background: var(--text-color-white);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.sidebar-menu a span:first-child {
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+#nav-toggle:checked + .sidebar {
+    width: 80px;
+}
+
+#nav-toggle:checked + .sidebar .sidebar-brand h4 span,
+#nav-toggle:checked + .sidebar li a span:last-child {
+    display: none;
+}
+
+
+
+
+/* Main Content Styles */
+
+.main-content {
+    margin-left: 245px;
+    transition: margin-left 300ms;
+}
+
+#nav-toggle:checked ~ .main-content {
+    margin-left: 80px;
+}
+
+#nav-toggle:checked ~ .main-content header {
+    width: calc(100% - 80px);
+    left: 80px;
+}
+
+header {
+    padding: 1rem 1.5rem;
+    box-shadow: 0 10px 40px 10px rgba(140, 152, 164, 0.095);
+    position: fixed;
+    top: 0;
+    left: 245px;
+    width: calc(100% - 245px);
+    z-index: 100;
+    background: var(--text-color-white);
+    transition: left 300ms;
+}
+
+header h4 {
+    color: var(--text-color)
+}
+
+header label span {
+    font-size: 1.7rem;
+    padding-right: 1rem;
+}
+
+header label:hover {
+    cursor: pointer;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.search-wrapper {
+    border: 1px solid #f0f0f0;
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.search-wrapper span {
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+    color: var(--text-color)
+}
+
+.search-wrapper input {
+    height: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+}
+
+.user-wrapper h4 {
+    margin-bottom: 0px !important;
+}
+
+.user-wrapper small {
+    display: inline-block;
+    color: var(--text-color);
+}
+
+.user-wrapper h6 {
+    color: var(--text-color)
+}
+
+main {
+    margin-top: 85px;
+    padding: 35px 0.5rem;
+    min-height: calc(100vh - 90px);
+}
+
+
+
+
+
+/* Card Styles */
+.card {
+    box-shadow: 0 6px 12px rgba(140, 152, 164, .075);
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: .0625rem solid rgba(231, 234, 243, .7);
+    border-radius: .75rem;
+}
+
+.card-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1.3125rem 1.3125rem;
+    margin-bottom: 0;
+    background-color: #fff;
+    border-bottom: .0625rem solid rgba(231, 235, 243, .7);
+}
+  
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.3125rem;
+}
+
+.card h1 + span {
+    color: var(--text-color);
+}
+
+.card .card-body div:last-child span {
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+.card .card-body div:first-child span {
+    color: var(--text-color);
+}
+
+
+
+
+/* Counters Styles */
+.counters {
+    margin-bottom: 2rem;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1200px) {
+    .sidebar {
+        width: 80px;
+    }
+    
+    .sidebar .sidebar-brand h4 span,
+    .sidebar li a span:last-child {
+        display: none;
+    }
+
+    .main-content {
+        margin-left: 80px;
+    }
+
+    .main-content header {
+        width: calc(100% - 80px);
+        left: 80px;
+    }
+
+    .sidebar:hover {
+        width: 245px;
+        z-index: 200;
+    }
+    
+    .sidebar:hover .sidebar-brand h4 span,
+    .sidebar:hover li a span:last-child {
+        display: inline ;
+    }
+}
+
+@media only screen and (max-width: 960px){
+
+}
+
+@media only screen and (max-width: 768px) {
+    .search-wrapper {
+        display: none;
+    }
+
+    .sidebar {
+        left: -100% !important;
+    }
+
+    header h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+    }
+
+    header h4 label {
+        background: var(--main-color);
+        padding-right: 0rem;
+        margin-right: 1rem;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        border-radius: 50%;
+        color: var(--text-color-white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header h4 span {
+        text-align: center;
+        padding-right: 0rem;
+    }
+
+    .main-content {
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    header {
+        width: 100% !important;
+        left: 0 !important;
+        z-index: 300;
+    }
+
+    #nav-toggle:checked + .sidebar {
+        left: 0 !important;
+        z-index: 100;
+        width: 245px;
+    }
+
+    #nav-toggle:checked + .sidebar {
+        width: 245px;
+        z-index: 200;
+    }
+    
+    #nav-toggle:checked + .sidebar .sidebar-brand h4 span,
+    #nav-toggle:checked + .sidebar li a span:last-child {
+        display: inline ;
+    }
+
+    #nav-toggle:checked ~ .main-content {
+        margin-left: 0rem !important;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    table tr th, table tr td {
+        font-size: .7rem;
+    }
+}
