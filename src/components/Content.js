@@ -28,7 +28,7 @@ function Content() {
                                         <span>Projects</span>
                                     </div>
                                     <div>
-                                        <span className="fas fa-users"></span>
+                                        <span className="fas fa-clipboard-list"></span>
                                     </div>
                                 </div>
                             </div>
@@ -42,7 +42,7 @@ function Content() {
                                         <span>Orders</span>
                                     </div>
                                     <div>
-                                        <span className="fas fa-users"></span>
+                                        <span className="fas fa-shopping-bag"></span>
                                     </div>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@ function Content() {
                                         <span>Income</span>
                                     </div>
                                     <div>
-                                        <span className="fas fa-users"></span>
+                                        <span className="fab fa-google-wallet"></span>
                                     </div>
                                 </div>
                             </div>

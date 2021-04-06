@@ -25,37 +25,37 @@ function Sidebar() {
                     </li>
                     <li>
                         <a href="#home">
-                            <span className="fas fa-tachometer-alt"></span>
+                            <span className="fas fa-users"></span>
                             <span>Customer</span>
                         </a>
                     </li>
                     <li>
                         <a href="#home">
-                            <span className="fas fa-tachometer-alt"></span>
+                            <span className="fas fa-clipboard-list"></span>
                             <span>Projects</span>
                         </a>
                     </li>
                     <li>
                         <a href="#home">
-                            <span className="fas fa-tachometer-alt"></span>
+                            <span className="fas fa-shopping-bag"></span>
                             <span>Orders</span>
                         </a>
                     </li>
                     <li>
                         <a href="#home">
-                            <span className="fas fa-tachometer-alt"></span>
+                            <span className="fas fa-box-open"></span>
                             <span>Inventory</span>
                         </a>
                     </li>
                     <li>
                         <a href="#home">
-                            <span className="fas fa-tachometer-alt"></span>
+                            <span className="fas fa-user-circle"></span>
                             <span>Accounts</span>
                         </a>
                     </li>
                     <li>
                         <a href="#home">
-                            <span className="fas fa-tachometer-alt"></span>
+                            <span className="fas fa-clipboard-check"></span>
                             <span>Tasks</span>
                         </a>
                     </li>
